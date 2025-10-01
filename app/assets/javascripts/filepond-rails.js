@@ -33,7 +33,7 @@ let FilePondRails = {
         }
       },
       fetch: {
-        url: './filepond/active_storage/fetch',
+        url: '/filepond/active_storage/fetch',
         method: 'POST',
         onload: (response) => {
           console.log(response)
@@ -45,7 +45,7 @@ let FilePondRails = {
         }
       },
       revert: {
-        url: './filepond/active_storage/remove'
+        url: '/filepond/active_storage/remove'
       },
       headers: {
         'X-CSRF-Token': document.head.querySelector("[name='csrf-token']").content
